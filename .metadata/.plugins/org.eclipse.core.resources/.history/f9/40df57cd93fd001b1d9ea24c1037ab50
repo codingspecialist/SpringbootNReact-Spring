@@ -1,0 +1,13 @@
+package com.getinthere.firstapp;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BananaController {
+	
+	@GetMapping("/banana")
+	public void 구매() {
+		System.out.println("바나나를 구매했습니다.");
+	}
+}

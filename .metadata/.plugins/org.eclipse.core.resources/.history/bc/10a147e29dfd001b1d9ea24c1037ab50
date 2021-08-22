@@ -1,0 +1,13 @@
+package com.cos.firstapp;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class BananaController {
+
+	@GetMapping("/banana")
+	public void 바나나가져오기() {
+		
+	}
+}

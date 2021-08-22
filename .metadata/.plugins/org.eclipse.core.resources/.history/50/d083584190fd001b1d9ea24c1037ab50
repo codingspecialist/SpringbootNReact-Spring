@@ -1,0 +1,17 @@
+package com.getinthere.firstapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FirstAppApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FirstAppApplication.class, args);
+		
+		Banana b1 = new Banana();
+		Banana b2 = new Banana();
+		System.out.println(b1.hashCode());
+		System.out.println(b2.hashCode());
+	}
+}

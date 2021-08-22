@@ -1,0 +1,17 @@
+package com.getinthere.firstapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class FirstAppApplication {
+	
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(FirstAppApplication.class, args);
+		
+
+		BananaController banana =  context.getBean(BananaController.class);
+		banana.구매();
+	}
+}

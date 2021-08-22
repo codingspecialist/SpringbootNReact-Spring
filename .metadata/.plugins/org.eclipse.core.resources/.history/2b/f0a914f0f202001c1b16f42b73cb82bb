@@ -1,0 +1,24 @@
+package com.cos.firstapp;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BananaController {
+
+	private Banana banana;
+	
+	public BananaController(Banana banana) {
+		this.banana = banana;
+	}
+	
+	@GetMapping("/banana")
+	public void 의존성주입테스트() {
+		banana.생성();
+	}
+	
+	@GetMapping("/a.txt")
+	public String 스테틱자원충돌테스트() {
+		return "스테틱 자원 충돌";
+	}
+}

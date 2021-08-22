@@ -1,0 +1,11 @@
+package com.getinthere.firstapp;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BananaController {
+	
+	public void 구매() {
+		System.out.println("바나나를 구매했습니다.");
+	}
+}

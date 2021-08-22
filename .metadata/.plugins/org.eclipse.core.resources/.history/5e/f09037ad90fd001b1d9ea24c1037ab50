@@ -1,0 +1,6 @@
+package com.getinthere.firstapp;
+
+public class Banana {
+	String color = "노란색";
+	int price = 1000;
+}

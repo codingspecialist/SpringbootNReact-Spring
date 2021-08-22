@@ -1,0 +1,9 @@
+package com.getinthere.firstapp;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class President {
+	String name = "대통령";
+	int age = 65;
+}

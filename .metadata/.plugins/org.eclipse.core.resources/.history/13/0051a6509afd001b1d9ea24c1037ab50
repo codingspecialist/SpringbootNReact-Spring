@@ -1,0 +1,8 @@
+package com.cos.firstapp;
+
+public class Banana {
+
+	public void 구매() {
+		System.out.println("바나나를 구매했습니다.");
+	}
+}
